@@ -214,4 +214,17 @@ Strikethrough Text: ~~Strikethrough Text~~
 **Output**
 ![Alt text](md%205.png)
 
-  ****
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+Documentation 
