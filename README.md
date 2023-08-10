@@ -2,13 +2,13 @@
 
 ## **Table of Contents** 
 
-[overview](#overview)
+[Overview](#overview)
 
 [Setup docsify in podman container](#setup-docsify-in-podman-container)
 
 [Login github](#login-github)
 
-[markdown basic syntex](#3-markdown-basic-syntex)
+[Markdown basic syntax](#3-markdown-basic-syntax)
 
 ## **Overview** 
 
@@ -25,7 +25,7 @@
 ![Alt text](pod%201.png)
 
 
-## Podman Install
+## Install Podman 
 
 - Now install the podman package
 
@@ -87,6 +87,12 @@
 
 ***Create a file named "Readme.md" in your preferred text editor and paste the following content***
 
+## Create Dockerfile 
+
+> ![Alt text](podddd%2025.png)
+
+
+
 ## Run the New Container and Set the Directory
 
 
@@ -102,7 +108,7 @@
 
 - Check if the container is created with the “podman ps” command.
 
->Podman p
+>Podman ps
 
 ![Alt text](pod9.png)
 
@@ -168,7 +174,7 @@
 
 
 
-## Step 5 Integration docsify and github
+## Step 5 Integration docsify and gitHub
 
 To integrate Docsify with GitHub and ensure seamless integration, include the repository name in the URL path. 
 
@@ -178,20 +184,52 @@ docsify/demo
 ![Alt text](pod66.png)
 
 
+## Step 6 Access Account Settings
+
+> ***Navigate to your account settings. Look for your profile picture or username at the top-right corner and click on it to access your account settings.***
+>- Within the account settings, search for a section related to "Tokens," "Security," or ***"Developer Settings."***
+
+|   **profile account**       | **Setting**          | 
+|---|--|
+| ![Alt text](git1.png) | ![Alt text](git2.png)       |
+
+## Create New Token
+
+>- Choose the option to create a new personal access token.
+
+>- Click the button to generate the token.
+
+|  ***Personal Access tokens*** | ***Generate New token***| ***Note***|
+|---|----|----|
+![Alt text](git3.png) |![Alt text](git6.png) |![Alt text](git7.png) |
+
+>- Once generated, you'll typically see the token displayed on your screen.
+Copy and Store Securely
+
+![Alt text](git9.png)
+
+>- Copy the token to your clipboard.
+Store the token in a safe place, like a password manager or a secure document.
+
+
 ***Similarly you can push when you have to update any code you will push and when you have to take any code from remote server then you will pull***
 
 ![Alt text](pod58.png)
 
 
-# 3. markdown basic syntex
+# 3.Markdown Basic Syntax
 
 ## Overview
 
-Markdown is a plain text formatting language used to create simple and structured documents. It is commonly used for web content, readme files, documentation, email, and various other types of text-based content. Below I'm doing some common Markdown syntax examples and their explanations:
+> Markdown is a plain text formatting language used to create simple and structured documents. It is commonly used for web content, readme files, documentation, email, and various other types of text-based content. Below I'm doing some common Markdown syntax examples and their explanations:
 
 ## 1. Headings
 > Headings are created using the # symbol, with one # indicating Heading 1 and six # indicating Heading 6.
 
+![Alt text](md7.png)
+
+**output**
+![Alt text](md90.png)
 
 
 
@@ -212,19 +250,5 @@ Strikethrough Text: ~~Strikethrough Text~~
 ![Alt text](md3.png) 
 
 **Output**
+
 ![Alt text](md%205.png)
-
- 
-
-# testing integration
-# First attempt
-
-
-
-
-
-
-
-
-
-Documentation 
