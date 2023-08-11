@@ -251,7 +251,7 @@ Strikethrough Text: ~~Strikethrough Text~~
 
 ![Alt text](md3.png) 
 
-havita kavita
+
 
 
 
