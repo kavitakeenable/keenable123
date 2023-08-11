@@ -10,8 +10,10 @@
 
 [Markdown basic syntax](#3-markdown-basic-syntax)
 
-## **Overview** 
+<div style='break-after:always'></div>
 
+
+## **Overview** 
 
  >podman is a containerization tool for Linux-based operating systems. You can follow these steps to install Podman on Ubuntu:
 
@@ -20,7 +22,9 @@
 
 - First, update your system so that you have the latest package progress and dependencies:
 
->sudo apt update
+
+
+><span style="color:blue"> sudo apt update</span>
 
 ![Alt text](pod%201.png)
 
@@ -29,19 +33,21 @@
 
 - Now install the podman package
 
->sudo apt install -y podman
+
+
+> <span style="color:blue"> sudo apt install -y podman </span>
 
 ![Alt text](pod2.png)
 
 
-- By doing this flag you will not need to avoid any confirmation in the installation process.
+- By doing this flag ***"(-y)"*** you will not need to avoid any confirmation in the installation process.
 
 
-## Podman  Version Check
+##  Check Podman Version 
 
 - podman is installed, you can check its version using the podman --version command:
 
->podman --version
+><span style="color:blue">podman --version</span>
 
 ![Alt text](pod3.png)
 
@@ -57,15 +63,22 @@
 **Create a Directory for Docsify**
 
 - Create a directory where you'll keep your Docsify documentation files. For example
->mkdir docs
->cd docs
+
+> - You can create a new folder. then  you can use the "mkdir folder_name" command in Terminal to create a new folder.
+
+>- <span style="color:blue">"mkdir uk"</span>
+
+
+> - Navigate Inside the Folder
+><span style="color:blue">"cd uk"</span>
 
 ![Alt text](pod4.png)
 
 ## Create the File and Open it for Editing:
 
->touch index.html
->touch README.md
+><span style="color:blue">"touch index.html"</span>
+
+><span style="color:blue">touch README.md</span>
 
 ![Alt text](pod5.png)
 
@@ -74,13 +87,13 @@
 
 * Then after that we have to write the code of html in Index.html
 
- >vim index.html
+ ><span style="color:blue">vim index.html</span>
 
 ![Alt text](pod7.png)
 
 ***Create a file named "index.html" in your preferred text editor and paste the following content***
 
- >vim README.md
+ ><span style="color:blue">vim README.md</span>
 
 ![Alt text](pod6.png)
  
@@ -89,7 +102,7 @@
 
 ## Create Dockerfile 
 
-> ![Alt text](podddd%2025.png)
+ ><span style="color:blue">![Alt text](podddd%2025.png)</span>
 
 
 
@@ -98,17 +111,24 @@
 
 - Run the new container and enter the desired directory where you want to work with Docsify. Replace **/path/to/your/directory** with the actual path to your desired directory:
 
+> ***let me explain the options -d, -p, and -v that are used in Podman containers***
 
-- First, create a Podman container for Docsify.
+> - ***"-d"*** (Detach Mode): This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal. It's useful for users who don't want to see the container's output in the terminal.
 
->Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify/demo
+> - ***"-p"*** (Port Forwarding): This option enables port forwarding between the container and the host system. This means you can access the services running inside the container without external categorization.
+
+> - ***"-v"*** (Volume Mount): This option allows you to mount a file or directory between the container and the host system. As a result, you can use your host file system within the container, enabling data sharing for your container.
+
+- ***First, create a Podman container for Docsify.***
+
+><span style="color:blue">Podman run -d -p 3000:3000 -v /home/poem/docs:/docs localhost/docsify/demo</span>
 
 ![Alt text](pod8.png)
 
 
 - Check if the container is created with the “podman ps” command.
 
->Podman ps
+><span style="color:blue">Podman ps</span>
 
 ![Alt text](pod9.png)
 
@@ -120,16 +140,20 @@
 ![Alt text](pod88.png)
 
 
+# 3.  started with GitHub
+## Step 1.  
 
-## 3.  Login github 
+## Login github
 
 **Now go to GitHub but how to login to GitHub account is given below**
 
 ***Here's a step-by-step guide to hosting Docsify docs on GitHub***
 
-## Step 1: Create GitHub Repository
 
->Log in to your GitHub account.
+***Login ya Sign in Github Account***
+
+><span style="color:blue">Log in to your GitHub account.
+</span>
 
 ![Alt text](POD%2021.png)
 
@@ -138,28 +162,34 @@
 
 ***On GitHub, click the "New" button to create a new repository. Give it a name of your choice***
 
-![Alt text](pod34.png)
-
-
+![Alt text](ggggt3.png)
 
 
 ## Step 2: Fill Repository Details
 
-- Choose a name for your repository, like "my-docs."
+> 1. In the ***"Repository name"*** box, type "DK12"
 
-- Write a short description about your project or documentation.
+> 2. In the ***"Description"*** box, type a short description.
 
-- Choose whether the repository should be public or private.
+> 3. Select whether your repository will be ***Public or Private.***
 
-- Check the "Initialise this repository with a README" option
+> 4. Select Add a README file.
 
-![Alt text](POD%2034.png)
+> 4. Click ***Create repository.***
 
+![Alt text](git%20pub.png)
 
 
 ## Step 3 : Stage and Commit Changes
 
->***git add*** to stage changes, ***commit*** them with git commit, and push them to the remote repository with git push. Has this process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
+***use of the Git commands - commit, clone, push, and pull***
+
+
+> ***git add*** to stage changes, ***commit*** them with git commit, and push them to the remote repository with git push. Has this process enabled you to integrate your Doxify documentation into a GitHub repository and manage it under centralised version control
+
+> - **Commit** : The git commit command is used to permanently store the changes made to code. Whenever you make changes to your code that you want to keep, you create a "commit" that contains a brief description of the changes you made. This helps in keeping track of the project's history.
+
+> - **Push** : The git push command is used to upload the committed changes from your local computer to a remote Git repository. When you make changes to your code and commit them, you need to push those changes to your remote repository so that others can see and access them.
 
 ![Alt text](POD77.png)
 
@@ -168,7 +198,12 @@
 
 ***Choose the "Clone" option on GitHub to get the repository URL. Copy this URL***
 
-![Alt text](podd%204.png)
+
+> - **Clone**: The git clone command is used to copy the entire remote Git repository onto your local machine. It's a way to get a complete copy of all files and history from the remote repository onto your system. This is often used when you want to start working on a project that is hosted remotely.
+
+![Alt text](git%20ras.png)
+
+
 
 ![Alt text](pod99.png)
 
@@ -176,10 +211,11 @@
 
 ## Step 5 Integration docsify and gitHub
 
-To integrate Docsify with GitHub and ensure seamless integration, include the repository name in the URL path. 
+- To integrate Docsify with GitHub and ensure seamless integration, include the repository name in the URL path. 
 
->Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs 
+><span style="color:blue">Podman run -d -p 3000:3000  --name=docsify -v /home/poem/Rashi:/docs 
 docsify/demo
+</span>
 
 ![Alt text](pod66.png)
 
@@ -190,8 +226,9 @@ docsify/demo
 >- Within the account settings, search for a section related to "Tokens," "Security," or ***"Developer Settings."***
 
 |   **profile account**       | **Setting**          | 
-|---|--|
-| ![Alt text](git1.png) | ![Alt text](git2.png)       |
+|---|----|
+|![Alt text](git%20to.png)    |![Alt text](git%20to2.png) |
+
 
 ## Create New Token
 
@@ -199,14 +236,25 @@ docsify/demo
 
 >- Click the button to generate the token.
 
-|  ***Personal Access tokens*** | ***Generate New token***| ***Note***|
-|---|----|----|
-![Alt text](git3.png) |![Alt text](git6.png) |![Alt text](git7.png) |
+  ### Personal Access tokens
+
+![Alt text](git%20tok.png)
+
+ ### Generate New token
+
+![Alt text](token.png)
+ 
+### Set Permissions
+
+> Specify what the token can do. Choose permissions like accessing repositories or performing read/write actions.
+
+![Alt text](git%20note.png)
 
 >- Once generated, you'll typically see the token displayed on your screen.
-Copy and Store Securely
+Copy and Store Securely.
 
-![Alt text](git9.png)
+![Alt text](git%20acces.png)
+
 
 >- Copy the token to your clipboard.
 Store the token in a safe place, like a password manager or a secure document.
@@ -215,6 +263,9 @@ Store the token in a safe place, like a password manager or a secure document.
 ***Similarly you can push when you have to update any code you will push and when you have to take any code from remote server then you will pull***
 
 ![Alt text](pod58.png)
+
+
+<div style='break-after:always'></div>
 
 
 # 3.Markdown Basic Syntax
@@ -251,11 +302,6 @@ Strikethrough Text: ~~Strikethrough Text~~
 
 ![Alt text](md3.png) 
 
-
-
-
-
 **Output**
-
 
 ![Alt text](md%205.png)
