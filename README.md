@@ -229,6 +229,8 @@ Store the token in a safe place, like a password manager or a secure document.
 ![Alt text](md7.png)
 
 **output**
+
+
 ![Alt text](md90.png)
 
 
@@ -250,5 +252,6 @@ Strikethrough Text: ~~Strikethrough Text~~
 ![Alt text](md3.png) 
 
 **Output**
+
 
 ![Alt text](md%205.png)
