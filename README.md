@@ -1,21 +1,24 @@
 <h1 align="center"><b>Docsify setup document </u></b></h1>
 
-## **Table of Contents** 
+
+<div style='break-after:always'></div>
+
+##Table of Contents
 
 [Overview](#overview)
 
-[Setup docsify in podman container](#setup-docsify-in-podman-container)
+[Setup docsify in podman container](#2-setup-docsify-in-podman-container)
 
 [Login github](#login-github)
 
-[Markdown basic syntax](#3-markdown-basic-syntax)
+[Markdown basic syntax](#Markdown-basic-syntax)
 
-<div style='break-after:always'></div>
 
 
 ## **Overview** 
 
  >podman is a containerization tool for Linux-based operating systems. You can follow these steps to install Podman on Ubuntu:
+
 
 
 **system updates**:
@@ -24,7 +27,7 @@
 
 
 
-><span style="color:blue"> sudo apt update</span>
+><span style="color:blue"> sudo apt update</span><div> 
 
 ![Alt text](pod%201.png)
 
@@ -66,17 +69,17 @@
 
 > - You can create a new folder. then  you can use the "mkdir folder_name" command in Terminal to create a new folder.
 
->- <span style="color:blue">"mkdir uk"</span>
+>- <span style="color:blue">mkdir uk</span>
 
 
 > - Navigate Inside the Folder
-><span style="color:blue">"cd uk"</span>
+><span style="color:blue">cd uk</span>
 
 ![Alt text](pod4.png)
 
 ## Create the File and Open it for Editing:
 
-><span style="color:blue">"touch index.html"</span>
+><span style="color:blue">touch index.html</span>
 
 ><span style="color:blue">touch README.md</span>
 
@@ -113,11 +116,11 @@
 
 > ***let me explain the options -d, -p, and -v that are used in Podman containers***
 
-> - ***"-d"*** (Detach Mode): This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal. It's useful for users who don't want to see the container's output in the terminal.
+> - **"-d"** **(Detach Mode)** : This option allows the container to run in the background, meaning the container will run as a separate process and free up your terminal. It's useful for users who don't want to see the container's output in the terminal.
 
-> - ***"-p"*** (Port Forwarding): This option enables port forwarding between the container and the host system. This means you can access the services running inside the container without external categorization.
+> - **"-p"** **(Port Forwarding)** : This option enables port forwarding between the container and the host system. This means you can access the services running inside the container without external categorization.
 
-> - ***"-v"*** (Volume Mount): This option allows you to mount a file or directory between the container and the host system. As a result, you can use your host file system within the container, enabling data sharing for your container.
+> - **"-v"** **(Volume Mount)** : This option allows you to mount a file or directory between the container and the host system. As a result, you can use your host file system within the container, enabling data sharing for your container.
 
 - ***First, create a Podman container for Docsify.***
 
@@ -126,7 +129,7 @@
 ![Alt text](pod8.png)
 
 
-- Check if the container is created with the “podman ps” command.
+- Check if the container is created with the **“podman ps”** command.
 
 ><span style="color:blue">Podman ps</span>
 
@@ -135,9 +138,16 @@
 
 ## Access your Docsify documentation
 
-- Open your web browser and enter http://localhost:3000 in the address bar. This will allow you to view your Docsify documentation served from the container. You should see the Docsify interface displaying your documentation content.
+- Open your web browser and enter **http://localhost:3000** in the address bar. This will allow you to view your Docsify documentation served from the container. You should see the Docsify interface displaying your documentation content.
 
 ![Alt text](pod88.png)
+
+
+- #### Docsify use the reference link for additional information
+     https://docsify.js.org/#/
+
+<div style='break-after:always'></div>
+
 
 
 # 3.  started with GitHub
@@ -147,7 +157,7 @@
 
 **Now go to GitHub but how to login to GitHub account is given below**
 
-***Here's a step-by-step guide to hosting Docsify docs on GitHub***
+* **Here's a step-by-step guide to hosting Docsify docs on GitHub**
 
 
 ***Login ya Sign in Github Account***
@@ -167,15 +177,15 @@
 
 ## Step 2: Fill Repository Details
 
-> 1. In the ***"Repository name"*** box, type "DK12"
+> 1. In the **"Repository name"** box, type **"DK12"**
 
-> 2. In the ***"Description"*** box, type a short description.
+> 2. In the **"Description"** box, type a short description.
 
-> 3. Select whether your repository will be ***Public or Private.***
+> 3. Select whether your repository will be **"Public or Private"**
 
 > 4. Select Add a README file.
 
-> 4. Click ***Create repository.***
+> 4. Click **"Create repository"**
 
 ![Alt text](git%20pub.png)
 
@@ -265,6 +275,11 @@ Store the token in a safe place, like a password manager or a secure document.
 ![Alt text](pod58.png)
 
 
+
+- #### GitHub use the reference link for additional information
+    https://docs.github.com/en/get-started/quickstart/hello-world
+
+
 <div style='break-after:always'></div>
 
 
@@ -305,3 +320,6 @@ Strikethrough Text: ~~Strikethrough Text~~
 **Output**
 
 ![Alt text](md%205.png)
+
+- #### Markdown Use the reference link for additional information 
+     https://www.markdownguide.org/cheat-sheet/
