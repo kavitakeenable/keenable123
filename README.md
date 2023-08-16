@@ -105,8 +105,19 @@
 
 ## Create Dockerfile 
 
- ><span style="color:blue">![Alt text](podddd%2025.png)</span>
+  > FROM node:latest
+  LABEL description="A demo Dockerfile for build Docsify."
+  WORKDIR /docs
+  RUN npm install -g docsify-cli@latest
+  EXPOSE 3000/tcp
+  ENTRYPOINT docsify serve .
 
+
+
+## Build docker image
+
+
+ > docker build -f Dockerfile -t docsify/demo .
 
 
 ## Run the New Container and Set the Directory
