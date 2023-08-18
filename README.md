@@ -1,9 +1,5 @@
 <h1 align="center"><b>Docsify setup document </u></b></h1>
 
-
-# hello #
-
-
 <div style='break-after:always'></div>
 
 # Table of Contents
